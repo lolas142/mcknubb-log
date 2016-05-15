@@ -1,0 +1,20 @@
+{
+    "name": "mcknubb/log",    
+    "type": "library",
+    "description": "Small group of classes to build upon. Logs timestamps in code",
+    "keywords": ["logger", "education"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elias Tångring",
+            "email": "eloliasos@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": { "Mcknubb\\": "src/" }
+    }
+}
