@@ -1,26 +1,19 @@
-## Clog 
-a logger class based on [lydia/Clog](https://github.com/mosbth/lydia/blob/master/src/CLog/CLog.php)
+## CLog 
+#### a logging class based on [lydia/Clog](https://github.com/mosbth/lydia/blob/master/src/CLog/CLog.php)
 
-This class has no dependencies and can easily be implemented in any project. It saves timestamps in memory and renders a table at the end of the page.
+This class has no dependencies and can easily be implemented in any ANAX-baed framework. 
 
-##Usage together with Anax-MVC
-
-###Installation
-
-To start using toeswade/log together with Anax-MVC start with adding it to your composer.json "toeswade/log": "dev-master" and then run composer update to install the package.
-
-Add the logger to DI and test it
-
-Once you have downloaded that package add the logger to your DI-container
+##Usage together with Anax-MVC   
+###Installation   
+The first thing you have to do to use CLog is to add `"mcknubb/log": "dev-master"`to your composer.json file and then run composer to update and install.
+Once the package has been installed you have to add the logger to DI. This is done by adding this code to your `"config_with_app.php"`. 
 ```php
-        $di->setShared('logger', function () {
-            $logger = new \Mcknubb\Log\Clog();
-            return $logger;
-        });
+    $di->setShared('logger', function () {
+        $logger = new \Mcknubb\Log\Clog();
+        return $logger;
+    });
 ```
-
-Then you can use it to set timestamps where ever you need in your code. For example in src/ThemeEngine/CThemeBasic
-
+Then all you have to do is add a timestamp whereever you want to see what happens. This example is from where we add the routes.
 ```php
     public function add($rule, $action = null)
     {
@@ -28,8 +21,9 @@ Then you can use it to set timestamps where ever you need in your code. For exam
         //..
     }
 ```
-To see your log just echo it at the end of your script
-
-// Render the response using theme engine.
-$app->theme->render();
-echo $app->logger->renderLog();
+Then to show the generated log you add `"echo $app->logger->renderLog();"` to the end of your file like so.
+```php
+    // Render the response using theme engine.
+    $app->theme->render();    
+    echo $app->logger->renderLog();
+```
