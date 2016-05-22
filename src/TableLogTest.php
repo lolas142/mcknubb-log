@@ -35,7 +35,7 @@ class TableLogTest extends \PHPUnit_Framework_TestCase
     public function testNothingLogged() 
     {
         $table = new \Mcknubb\Log\TLog();
-        $res = $table->noLog();
+        $res = $table->nothingLogged();
         $this->assertInternalType('string', $res);
     }
     
