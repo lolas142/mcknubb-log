@@ -1,10 +1,5 @@
 <?php
-
-
 namespace Mcknubb\Log;
-
-include_once "TLog.php";
-include_once "CLog.php";
 /**
  * 
  * Controller class for CLog.

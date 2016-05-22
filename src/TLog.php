@@ -1,6 +1,4 @@
 <?php
-
-
 namespace Mcknubb\Log;
 /**
  * Tlog

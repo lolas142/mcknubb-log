@@ -1,6 +1,8 @@
 <?php
 namespace Mcknubb\Log;
 include_once "CLogController.php";
+include_once "TLog.php";
+include_once "CLog.php";
 /**
  * HTML Form elements.
  *

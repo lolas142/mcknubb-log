@@ -1,9 +1,5 @@
 <?php
-
-
 namespace Mcknubb\Log;
-
-
 /**
  * 
  * CLog
