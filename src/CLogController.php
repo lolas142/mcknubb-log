@@ -53,6 +53,13 @@ class CLogController
     return $this->table->renderTimestampAsTable($timestamps, $memorypeak, $pageLoadTime);
   }
 
+  /**
+   * Get Timestamps as Array
+   */
+  public function getTimestampsAsArray() {
+    return $this->log->getTimestamp();
+  }
+
   /*
    * Test if class is loaded
    */

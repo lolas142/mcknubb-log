@@ -22,7 +22,7 @@ class CLogControllerTest extends \PHPUnit_Framework_TestCase
         $method = 'testMethod';
         $comment = 'testComment';
         $Clog->Timestamp($class, $method, $comment);
-        $res = $Clog->getTimestamp();
+        $res = $Clog->getTimestampsAsArray();
         $resClass = $res[0]['domain'];
         $this->assertEquals($resClass, $class, "The registered class doesn't match the result");
         $resMethod = $res[0]['where'];
