@@ -2,8 +2,6 @@
 
 
 namespace Mcknubb\Log;
-
-
 /**
  * Tlog
  * Print table for CLog

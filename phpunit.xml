@@ -7,12 +7,13 @@
         </testsuite>
     </testsuites>
 
-<!--     <filter>
+    <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">src/</directory>
         </whitelist>
     </filter>
- -->
+
+
     <logging>
         <log type="coverage-html" target="src/coverage/"/>
         <log type="coverage-clover" target="coverage.clover"/>
