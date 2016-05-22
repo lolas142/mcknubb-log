@@ -10,8 +10,8 @@ before_script:
   - composer update
 
 script: 
-    - phpunit src/CLogControllerTest.php
-    - phpunit src/TableLogTest.php
+    - phpunit src/CLogControllerTest.php --coverage-clover coverage.clover
+    - phpunit src/TableLogTest.php --coverage-clover coverage.clover
 
 after_script:
   - php ocular.phar code-coverage:upload --format=php-clover coverage.clover

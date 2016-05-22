@@ -29,3 +29,5 @@ Then to show the generated log you add `"echo $app->logger->renderLog();"` to th
 ```
 
 [![Build Status](https://travis-ci.org/lolas142/mcknubb-log.svg?branch=master)](https://travis-ci.org/lolas142/mcknubb-log)
+[![Code Coverage](https://scrutinizer-ci.com/g/lolas142/mcknubb-log/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/lolas142/mcknubb-log/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/lolas142/mcknubb-log/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/lolas142/mcknubb-log/?branch=master)
