@@ -1,5 +1,6 @@
 <?php
 namespace Mcknubb\Log;
+include "CLogController.php";
 /**
  * HTML Form elements.
  *
