@@ -1,5 +1,7 @@
 <?php
 namespace Mcknubb\Log;
+include "TLog.php";
+include "CLog.php";
 /**
  * HTML Form elements.
  *
