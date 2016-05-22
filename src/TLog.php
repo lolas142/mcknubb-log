@@ -20,6 +20,9 @@ class TLog
   public function renderTimestampAsTable($timestamps, $memoryPeak, $pageLoadTime) {
     $prev = $first = $timestamps[0]['when'];
     $last = $timestamps[count($timestamps) - 1]['when'];
+    if($last === $first) {
+      $last = microtime(true);
+    }
     $html = "<div class='log' style='background-color:#fff; color:#000; margin-top:50px; padding:20px;'><table class=table><h2>Timestamps</h2><tr><th>Domain</th><th>Where</th><th>When (sec)</th><th>Duration (sec)</th><th>Percent</th><th>Memory (MB)</th><th>Memory peak (MB)</th><th>Comment</th></tr>";
     $right = ' style="text-align: right;"';
     $total = array('domain' => array(), 'where' => array());
