@@ -40,7 +40,7 @@ class CLogControllerTest extends \PHPUnit_Framework_TestCase
     {
         
         $Clog = new \Mcknubb\Log\CLogController();
-        $res = $Clog->renderLog();
+        $res = $Clog->printLog();
         $this->assertInternalType('string', $res);
     }
     
