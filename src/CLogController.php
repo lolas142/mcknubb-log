@@ -3,7 +3,8 @@
 
 namespace Mcknubb\Log;
 
-
+include "TLog.php";
+include "CLog.php";
 /**
  * 
  * Controller class for CLog.
