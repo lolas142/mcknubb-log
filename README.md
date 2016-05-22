@@ -27,3 +27,5 @@ Then to show the generated log you add `"echo $app->logger->renderLog();"` to th
     $app->theme->render();    
     echo $app->logger->renderLog();
 ```
+
+[![Build Status](https://travis-ci.org/lolas142/mcknubb-log.svg?branch=master)](https://travis-ci.org/lolas142/mcknubb-log)
