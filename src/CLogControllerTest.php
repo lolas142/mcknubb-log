@@ -8,7 +8,7 @@ include "CLogController.php";
 class CLogControllerTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * Test that the stamp method saves the values correctly
+     * Test that the Timestamp method saves the values correctly
      *
      * @return void
      *
@@ -21,7 +21,7 @@ class CLogControllerTest extends \PHPUnit_Framework_TestCase
         $class = 'testClass';
         $method = 'testMethod';
         $comment = 'testComment';
-        $Clog->stamp($class, $method, $comment);
+        $Clog->Timestamp($class, $method, $comment);
         $res = $Clog->getLogAsArray();
         $resClass = $res[0]['domain'];
         $this->assertEquals($resClass, $class, "The registered class doesn't match the result");
